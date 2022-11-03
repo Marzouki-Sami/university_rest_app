@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_group</OriginalElement>
+  <nodes>
+    <node x="-123.50398457680257" y="1669.5015274275993">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_group_permissions</node>
+    <node x="471.3905782628458" y="-87.55670969041239">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_groupeteacher</node>
+    <node x="362.33280140125635" y="1666.5615935154028">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_user_user_permissions</node>
+    <node x="-276.79527075613004" y="287.67342431784635">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_modulesession</node>
+    <node x="652.7152669263245" y="1652.1898392877415">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.django_admin_log</node>
+    <node x="-86.50398457680257" y="1400.6115208946467">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_group</node>
+    <node x="502.3301777928199" y="1112.789206561914">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.sqlite_master</node>
+    <node x="261.0680444950526" y="1151.984219525881">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.django_content_type</node>
+    <node x="-311.11247334860514" y="-212.76305496272045">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_session</node>
+    <node x="-72.27755407574543" y="2.3281501031798655">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_module</node>
+    <node x="325.6756876234839" y="1378.6115208946467">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_permission</node>
+    <node x="496.3905782628458" y="-408.8794669044632">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_teacher</node>
+    <node x="154.46174686703415" y="-320.87946690446313">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_moduleteacher</node>
+    <node x="-80.02599167004658" y="1849.164670632987">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.sqlite_sequence</node>
+    <node x="918.7345948461384" y="1185.018662911073">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.django_session</node>
+    <node x="1094.3736411800173" y="-425.40348893029784">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_list_of_absence</node>
+    <node x="785.3194096586574" y="-458.40348893029784">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_student</node>
+    <node x="583.5742520096372" y="1315.4997782918053">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_user</node>
+    <node x="691.9015890380109" y="1131.672959799009">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.django_migrations</node>
+    <node x="787.3194096586574" y="-140.7550437584486">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_groupe</node>
+    <node x="142.52988581206841" y="1648.280087653945">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_user_groups</node>
+    <node x="458.2012395020587" y="56.149164833130754">fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_modulegroupe</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_modulegroupe" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_module" relationship="REFERENCES">
+      <point x="-108.0786766307267" y="-13.37732107881817" />
+      <point x="473.122562871332" y="135.7674463705393" />
+      <point x="25.99999999999997" y="135.7674463705393" />
+      <point x="25.99999999999997" y="74.32808019639926" />
+      <point x="-97.99951793734783" y="-6.990678060780908E-5" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_permission" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.django_content_type" relationship="REFERENCES">
+      <point x="1.4845748955849558E-4" y="-61.00002171297717" />
+      <point x="406.67583608097345" y="1285.2454991816694" />
+      <point x="351.5678360809735" y="1285.2454991816694" />
+      <point x="-2.084140791396294E-4" y="50.00027965578863" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_groupeteacher" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_groupe" relationship="REFERENCES">
+      <point x="119.9501338713211" y="26.699117546386162" />
+      <point x="713.8407121341669" y="-7.012519570842926" />
+      <point x="863.570289891918" y="-7.012519570842926" />
+      <point x="-20.24911976673934" y="71.9996158406335" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_user_user_permissions" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_user" relationship="REFERENCES">
+      <point x="3.467971714599116E-5" y="-50.00009433373316" />
+      <point x="477.3328360809735" y="1620.2454991816694" />
+      <point x="663.5738360809735" y="1620.2454991816694" />
+      <point x="-4.1592866375594895E-4" y="137.9997208898642" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_user_groups" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_user" relationship="REFERENCES">
+      <point x="-4.97310948901486E-5" y="-49.99958847227526" />
+      <point x="222.02983608097352" y="1620.2454991816694" />
+      <point x="663.5738360809735" y="1620.2454991816694" />
+      <point x="-4.1592866375594895E-4" y="137.9997208898642" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_modulegroupe" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_groupe" relationship="REFERENCES">
+      <point x="-2.41278844214321E-4" y="-49.99961328045623" />
+      <point x="581.2009982232145" y="112.02791779805975" />
+      <point x="863.570289891918" y="112.02791779805975" />
+      <point x="-20.24911976673934" y="71.9996158406335" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_modulesession" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_module" relationship="REFERENCES">
+      <point x="37.003984576802594" y="-49.999735283476525" />
+      <point x="-116.29128617932744" y="338.0" />
+      <point x="25.99999999999997" y="338.0" />
+      <point x="25.99999999999997" y="74.32808019639926" />
+      <point x="-97.99951793734783" y="-6.990678060780908E-5" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_group_permissions" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_group" relationship="REFERENCES">
+      <point x="-1.7934222394444532E-4" y="-50.0000282459298" />
+      <point x="-20.50416391902651" y="1512.2454991816694" />
+      <point x="79.15983608097349" y="1512.2454991816694" />
+      <point x="79.15983608097349" y="1439.6114991816694" />
+      <point x="65.99982065777606" y="-2.1712977172683168E-5" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_group_permissions" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_permission" relationship="REFERENCES">
+      <point x="14.999820657776027" y="-50.0000282459298" />
+      <point x="-5.504163919026539" y="1569.2454991816694" />
+      <point x="406.67583608097345" y="1569.2454991816694" />
+      <point x="1.4845748955849558E-4" y="60.99997828702283" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.django_admin_log" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_user" relationship="REFERENCES">
+      <point x="-4.308453510475374E-4" y="-105.00034010607192" />
+      <point x="747.7148360809734" y="1620.2454991816694" />
+      <point x="663.5738360809735" y="1620.2454991816694" />
+      <point x="-4.1592866375594895E-4" y="137.9997208898642" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_user_user_permissions" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_permission" relationship="REFERENCES">
+      <point x="-14.999965320282854" y="-50.00009433373316" />
+      <point x="462.3328360809735" y="1569.2454991816694" />
+      <point x="406.67583608097345" y="1569.2454991816694" />
+      <point x="1.4845748955849558E-4" y="60.99997828702283" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_groupeteacher" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_teacher" relationship="REFERENCES">
+      <point x="0.05788682713102844" y="-46.38908251908032" />
+      <point x="593.9484650899768" y="-193.57732566939436" />
+      <point x="593.8905615319245" y="-193.57732566939436" />
+      <point x="-1.673092128839926E-5" y="94.00029392784003" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_session" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_module" relationship="REFERENCES">
+      <point x="97.00000690015996" y="2.775486451866982E-4" />
+      <point x="25.99999999999997" y="-85.76277741407526" />
+      <point x="25.99999999999997" y="74.32808019639926" />
+      <point x="-97.99951793734783" y="-6.990678060780908E-5" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_user_groups" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.auth_group" relationship="REFERENCES">
+      <point x="-15.000049731094919" y="-49.99958847227526" />
+      <point x="207.0298360809735" y="1620.2454991816694" />
+      <point x="79.15983608097349" y="1620.2454991816694" />
+      <point x="79.15983608097349" y="1439.6114991816694" />
+      <point x="65.99982065777606" y="-2.1712977172683168E-5" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_student" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_groupe" relationship="REFERENCES">
+      <point x="-4.8007353542385545" y="-96.20927702714914" />
+      <point x="879.0186743044188" y="0.24495624155137818" />
+      <point x="908.4318310327179" y="0.24495624155137818" />
+      <point x="908.4318310327179" y="-134.1126677577746" />
+      <point x="34.92489987319482" y="-65.357623999326" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_moduleteacher" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_teacher" relationship="REFERENCES">
+      <point x="79.13464154311117" y="15.691424364905117" />
+      <point x="357.5963884101453" y="-270.87946690446313" />
+      <point x="502.96482794108033" y="-270.87946690446313" />
+      <point x="-90.92575032176546" y="16.03289407303933" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_list_of_absence" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_student" relationship="REFERENCES">
+      <point x="-93.06227816856108" y="3.1593700141191903" />
+      <point x="952.8734194786246" y="-350.24411891617865" />
+      <point x="952.8734194786246" y="-306.64147791738054" />
+      <point x="883.8194096586574" y="-306.64147791738054" />
+      <point x="0.0" y="104.99999999999997" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_moduleteacher" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_module" relationship="REFERENCES">
+      <point x="-123.99957545871854" y="-3.7886677941401103E-4" />
+      <point x="278.7954173486088" y="-270.87984577124257" />
+      <point x="278.7954173486088" y="20.05682724402682" />
+      <point x="25.99999999999997" y="20.05682724402682" />
+      <point x="25.99999999999997" y="74.32808019639926" />
+      <point x="-97.99951793734783" y="-6.990678060780908E-5" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_modulesession" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.university_app_session" relationship="REFERENCES">
+      <point x="-60.8172025924751" y="45.63178026480483" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.django_admin_log" target="fe271851-e19b-4fcd-9910-ea0978d16f7d.TABLE:main.django_content_type" relationship="REFERENCES">
+      <point x="14.999569154648952" y="-105.00034010607192" />
+      <point x="762.7148360809734" y="1285.2454991816694" />
+      <point x="351.5678360809735" y="1285.2454991816694" />
+      <point x="-2.084140791396294E-4" y="50.00027965578863" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5213310580204782" showDependencies="false" x="867.9083469721759" y="-206.94716530278276" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

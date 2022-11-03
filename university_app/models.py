@@ -25,8 +25,15 @@ class Groupe(models.Model):
     module = models.ManyToManyField('Module', through='ModuleGroupe', related_name='groups')
 
 
-class Student(models.Model):
+class Adress(models.Model):
+    id = models.IntegerField(primary_key=True)
+    number = models.IntegerField(default=0, null=False, blank=False, db_column='number')
+    street = models.CharField(default='', max_length=100, null=False, blank=False, db_column='street')
+    city = models.CharField(default='', max_length=100, null=False, blank=False, db_column='city')
+    postal_code = models.IntegerField(default=0, max_length=4, null=False, blank=False, db_column='postal code')
+    student = models.ForeignKey('student', on_delete=models.CASCADE, related_name='adresse')
 
+class Student(models.Model):
     id = models.IntegerField(primary_key=True)
     name = models.CharField(default='', max_length=100, null=False, blank=False, db_column='name')
     familyName = models.CharField(default='', max_length=100, null=False, blank=False, db_column='family Name')

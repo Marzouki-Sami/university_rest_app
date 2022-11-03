@@ -1,5 +1,3 @@
-import time
-
 import django.utils.timezone
 from django.db import models
 
@@ -90,7 +88,7 @@ class Address(models.Model):
     street = models.CharField(default='<empty>', max_length=100, null=False, blank=False, db_column='street')
     city = models.CharField(default='<empty>', max_length=100, null=False, blank=False, db_column='city')
     postal_code = models.IntegerField(default=0, null=False, blank=False, db_column='postal code')
-    student = models.ForeignKey('student', on_delete=models.CASCADE, related_name='adresse')
+    student = models.ForeignKey('Student', on_delete=models.CASCADE, related_name='adresse')
 
     class Meta:
         db_table = 'address'
@@ -122,7 +120,6 @@ class ListOfAbsence(models.Model):
 
     class Meta:
         db_table = 'list of absence'
-
 
 
 class Session(models.Model):

@@ -15,7 +15,7 @@ student_situation = (
     ('other', 'other'),
 )
 
-liste_of_tools = (
+list_of_tools = (
     ('software tools', 'software tools'),
     ('hardware tools', 'hardware tools'),
 )
@@ -53,8 +53,8 @@ class Person(models.Model):
 
 class Teacher(Person):
     grade = models.IntegerField(default=0, null=False, blank=False, db_column='grade')
-    personel_email = models.EmailField(default='<empty>', max_length=100, null=False, blank=False,
-                                       db_column='personel email')
+    personal_email = models.EmailField(default='<empty>', max_length=100, null=False, blank=False,
+                                       db_column='personal email')
     work_email = models.EmailField(default='<empty>', max_length=100, null=False, blank=False, db_column='work email')
     total_hours_per_week = models.IntegerField(default=0, null=False, blank=False, db_column='total hours per week')
     modules = models.ManyToManyField('Module', through='ModuleTeacher', related_name='teachers')
@@ -88,7 +88,7 @@ class Address(models.Model):
     street = models.CharField(default='<empty>', max_length=100, null=False, blank=False, db_column='street')
     city = models.CharField(default='<empty>', max_length=100, null=False, blank=False, db_column='city')
     postal_code = models.IntegerField(default=0, null=False, blank=False, db_column='postal code')
-    student = models.ForeignKey('Student', on_delete=models.CASCADE, related_name='adresse')
+    student = models.ForeignKey('Student', on_delete=models.CASCADE, related_name='address')
 
     class Meta:
         db_table = 'address'
@@ -129,8 +129,8 @@ class Session(models.Model):
     classroom_number = models.IntegerField(db_column='classroom number')
     goal = models.CharField(default='<empty>', max_length=1000, db_column='goal')
     summary = models.CharField(default='<empty>', max_length=1000, db_column='summary')
-    liste_of_tools = models.CharField(default=liste_of_tools[0][0], max_length=100, db_column='liste of tools',
-                                      choices=liste_of_tools)
+    list_of_tools = models.CharField(default=list_of_tools[0][0], max_length=100, db_column='list of tools',
+                                     choices=list_of_tools)
     module = models.ForeignKey('Module', on_delete=models.CASCADE, null=False, default=0, db_column='module')
     state = models.CharField(default=session_states[0][0], max_length=100, null=False, blank=False, db_column='state',
                              choices=session_states)

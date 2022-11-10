@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'university_app.apps.UniversityAppConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -73,8 +74,12 @@ WSGI_APPLICATION = 'university_rest_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'university_db',
+        'USER': 'user1',
+        'PASSWORD': 'user1',
+        'HOST': '127.0.0.1',
+        'PORT': '5432'
     }
 }
 

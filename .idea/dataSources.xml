@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlite:C:\Users\asus\PycharmProjects\university_rest_app\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="university_db@localhost" uuid="e92193d8-9d6c-4261-a62f-99832d015af9">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/university_db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

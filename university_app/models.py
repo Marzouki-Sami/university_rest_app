@@ -44,8 +44,8 @@ class Person(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(default='<empty>', max_length=100, null=False, blank=False, db_column='name')
     familyName = models.CharField(default='<empty>', max_length=100, null=False, blank=False, db_column='family Name')
-    photo = models.ImageField(default='<empty>', null=False, blank=False, db_column='photo')
-    birthday = models.DateField(default=django.utils.timezone.now, null=False, blank=False, db_column='birthday')
+    photo = models.ImageField(default='<empty>', null=True, blank=True, db_column='photo')
+    birthday = models.DateField(default=django.utils.timezone.now, null=True, blank=True, db_column='birthday')
 
     class Meta:
         abstract = True
@@ -68,7 +68,7 @@ class Teacher(Person):
 
 
 class Groupe(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     name = models.CharField(default='<empty>', max_length=100, null=False, blank=False, db_column='name')
     numberOfStudents = models.IntegerField(default=0, blank=False, db_column='number Of Students')
     email = models.EmailField(default='<empty>', max_length=100, null=False, blank=False, db_column='email')
@@ -83,7 +83,7 @@ class Groupe(models.Model):
 
 
 class Address(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     number = models.IntegerField(default=0, null=False, blank=False, db_column='number')
     street = models.CharField(default='<empty>', max_length=100, null=False, blank=False, db_column='street')
     city = models.CharField(default='<empty>', max_length=100, null=False, blank=False, db_column='city')
@@ -112,7 +112,7 @@ class Student(Person):
 
 
 class ListOfAbsence(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     date = models.DateField(django.utils.timezone.now, db_column='date')
     motif = models.CharField(default='<empty>', max_length=100, db_column='motif')
     justification = models.CharField(default='<empty>', max_length=100, db_column='justification')
@@ -123,7 +123,7 @@ class ListOfAbsence(models.Model):
 
 
 class Session(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     start_date = models.DateField(django.utils.timezone.now, db_column='start date')
     end_date = models.DateField(django.utils.timezone.now, db_column='end date')
     classroom_number = models.IntegerField(db_column='classroom number')
@@ -145,7 +145,7 @@ class Session(models.Model):
 
 
 class Module(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     name = models.CharField(default='<empty>', max_length=100, null=False, blank=False, db_column='name', unique=True)
     nbHours = models.IntegerField(default=0, blank=False, db_column='number Of Hours')
     type = models.CharField(default=module_types[0][0], max_length=100, null=False, blank=False, db_column='type',
@@ -158,7 +158,7 @@ class Module(models.Model):
 
 
 class ModuleTeacher(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     teacher = models.ForeignKey(Teacher, on_delete=models.CASCADE, null=False, default=0, db_column='teacher')
     module = models.ForeignKey(Module, on_delete=models.CASCADE, null=False, default=0, db_column='module')
 
@@ -167,7 +167,7 @@ class ModuleTeacher(models.Model):
 
 
 class ModuleGroupe(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     group = models.ForeignKey(Groupe, on_delete=models.CASCADE, null=False, default=0, db_column='group')
     module = models.ForeignKey(Module, on_delete=models.CASCADE, null=False, default=0, db_column='module')
 
@@ -176,7 +176,7 @@ class ModuleGroupe(models.Model):
 
 
 class ModuleSession(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     session = models.ForeignKey(Session, on_delete=models.CASCADE, null=False, default=0, db_column='session')
     module = models.ForeignKey(Module, on_delete=models.CASCADE, null=False, default=0, db_column='module')
 
@@ -185,7 +185,7 @@ class ModuleSession(models.Model):
 
 
 class GroupeTeacher(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     teacher = models.ForeignKey(Teacher, on_delete=models.CASCADE, null=False, default=0, db_column='teacher')
     group = models.ForeignKey(Groupe, on_delete=models.CASCADE, null=False, default=0, db_column='group')
 

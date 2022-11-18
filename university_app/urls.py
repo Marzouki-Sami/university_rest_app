@@ -12,5 +12,5 @@ router.register(r'sessions', views.SessionViewSet)
 
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)),
 ]

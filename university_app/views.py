@@ -76,3 +76,4 @@ class TeacherViewSet(viewsets.ModelViewSet):
         "options",
         "trace",
     ]
+
